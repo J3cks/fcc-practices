@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form One</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Welcome to Form One Survey Form</h1>
+    <p id="description">This is a practice page for building a survey form. Cheers!</p>
+    <form id="survey-form" method="POST">
+        <fieldset>
+            <label id="name-label">Enter your Name <input type="text" name="name" id="name" placeholder="Monkey D. Luffy" required/></label>
+            <label id="number-label">Enter your Age <input type="number" name="age" id="number" min="5" max="120" placeholder="17"/></label>
+            <label id="email-label">Enter your Email  <input type="email" name="email" id="email" placeholder="luffykingofpirates@grandline.com" required/></label>
+        </fieldset>
+
+        <fieldset>
+            <label for="button"> Are you a Weeb or Otaku?
+                <input type="radio" name="otaku/weeb" value="weeb"/> Weeb
+                <input type="radio" name="otaku/weeb" value="otaku/> Otaku
+            </label>
+            <label for="screen-time"> How long do you watch anime daily? <select id="dropdown" name="screen-time">
+                <option value=""> choose here</option>
+                <option value="1"> < 1 hour</option>
+                <option value="2"> 3 > hours</option>
+                <option value="3"> 5 hours and up</option>
+            </select></label>
+        </fieldset>
+
+        <fieldset>
+            <p>Choose your favorite animes</p> <p>maximum of 3 animes only</p>
+            <label for="kimetsu-no-yaiba"><input type="checkbox" name="kimetsu-no-yaiba" id="kimetsu-no-yaiba" value="kimetsu-no-yaiba"/> Kimetsu-no-yaiba (Demon Slayer) </label>
+            <label for="naruto"><input type="checkbox" name="naruto" id="naruto" value="naruto"/> Naruto </label>
+            <label for="clannad"><input type="checkbox" name="clannad" id="clannad" value="clannad"/> Clannad </label>
+            <label for="one-piece"><input type="checkbox" name="one-piece" id="one-piece" value="one-piece"/> One Piece </label>  
+            <label for="full-metal-alchemist"><input type="checkbox" name="full-metal-alchemist" id="full-metal-alchemist" value="full-metal-alchemist"/> Full Metal Alchemist </label>  
+            <label for="neon-genesis-evangelion"><input type="checkbox" name="neon-genesis-evangelion" id="neon-genesis-evangelion" value="neon-genesis-evangelion"/> Neon Genesis Evangelion </label>
+            <label for="jojos-bizarre-adventure"><input type="checkbox" name="jojos-bizarre-adventure" id="jojos-bizarre-adventure" value="jojos-bizarre-adventure"/> Jojo's Bizzare Adventure </label>
+            <label for="rezero"><input type="checkbox" name="rezero" id="rezero" value="rezero"/> Re:Zero -Starting Life in Another World </label>
+            <label for="pokemon"><input type="checkbox" name="pokemon" id="pokemon" value="pokemon"/> Pokemon </label>
+            <label for="death-note"><input type="checkbox" name="death-note" id="death-note" value="death-note"/> Death Note </label>
+            
+            <label for="textarea"> Comments and Suggestions <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I love anime!"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit" placeholder="I love anime!"/>
+    </form>
+</body>
+</html>
