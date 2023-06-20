@@ -1,3 +1,69 @@
 body {
-    margin: auto;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+    background-image: url(./images/1920x1080-511973-train-night.jpg);
+}
+
+#title, #description {
+    text-align: center;
+    margin-top: 75px;
+}
+
+#description {
+    margin-top: 25px;
+}
+
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    border-bottom: 4px solid white;
+
+}
+
+label {
+    display: block;
+}
+
+.radio {
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+}
+
+.anime-list {
+    width: unset;
+    vertical-align: middle;
+    margin: 0;
+}
+
+#submit {
+    display: block;
+    padding: 5px;
+    width: 80px;
+    margin: 15px auto;
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 }
