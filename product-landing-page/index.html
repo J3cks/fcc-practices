@@ -11,14 +11,14 @@
         <img src="https://rialto-e.co.jp/assets/img/works/tog/logo.png" id="header-img" alt="tower of god logo">
         <nav id="nav-bar">
             <ul>
-               <li class="nav-bar-links">
-                <a class="nav-link" href="#features">Features</a>
+               <li>
+                <a class="nav-link" href="#Features">Features</a>
                </li>
-               <li class="nav-bar-links">
-                <a class="nav-link" href="#items">Items</a>
+               <li>
+                <a class="nav-link" href="#Items">Items</a>
                </li>
-               <li class="nav-link">
-                <a class="nav-link" href="contact-us">Contact Us</a>
+               <li>
+                <a class="nav-link" href="#contact">Contact Us</a>
                </li>
             </ul>
         </nav>
@@ -27,7 +27,7 @@
         <section id="introduction">
         <h1 id="title-line">Tower of God Merchandise</h1>
         <p id="description">Buy Official Merchandise here!</p>
-        <iframe src="https://www.youtube.com/embed/QtGFhQlKNFo" width="80%" height="400" style="border:none;">
+        <iframe id="video" src="https://www.youtube.com/embed/QtGFhQlKNFo" width="80%" height="400" style="border:none;">
         </iframe>
         <p class="tog-infp">
             Tower of God (Korean: 신의 탑; RR: Sin-ui Tap) is a South Korean manhwa
@@ -40,7 +40,7 @@
         </p>
         </section>
 
-        <section id="features">
+        <section id="Features">
             <h2 class="section-title" id="features">Features</h2>
             <div class="features-container-1">
                 <img src="https://seekicon.com/free-icon-download/dollar_4.svg" loading="lazy" alt="dollar-sign" id="dollar-sign" height="300" width="300" class="feature-image-1">
@@ -69,7 +69,7 @@
             </div>
         </section>
 
-        <section id="items">
+        <section id="Items">
             <div>
                 <h2>Items</h2>
             </div>
@@ -98,12 +98,13 @@
             </div>
         </section>
 
-        <section id="contact-us">
+        <section id="contact">
             <h2>Contact Us!</h2>
-            <form method="post" id="form-contact-us">
+            <form method="post" id="form" action="https://www.freecodecamp.com/email-submit">
                 Name <input type="text" id="name" placeholder="Yuri Zahard" required/><br>
-                Email <input type="email" id="email" placeholder="the25thbam@tog.com" required/><br>
+                Email <input type="email" id="email" name="email" placeholder="the25thbam@tog.com" required/><br>
                 Comments <br> <textarea cols="50" rows="5">I want a Yuri plushie!... </textarea>
+                <input type="submit" id="submit" value="Submit">
             </form>
         </section>
 
