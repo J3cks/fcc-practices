@@ -8,20 +8,16 @@
 </head>
 <body>
     <header id="header">
-        <img src="https://rialto-e.co.jp/assets/img/works/tog/logo.png" id="header-img" alt="tower of god logo">
-        <nav id="nav-bar">
-            <ul>
-               <li>
-                <a class="nav-link" href="#Features">Features</a>
-               </li>
-               <li>
-                <a class="nav-link" href="#Items">Items</a>
-               </li>
-               <li>
-                <a class="nav-link" href="#contact">Contact Us</a>
-               </li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <img src="https://rialto-e.co.jp/assets/img/works/tog/logo.png" id="header-img" alt="tower of god logo">
+            <nav id="nav-bar">
+                <ul class="navbar-header">
+                    <li><a class="nav-link" href="#Features">Features</a></li>
+                    <li></li><a class="nav-link" href="#Items">Items</a></li>
+                    <li><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="introduction">
@@ -29,7 +25,7 @@
         <p id="description">Buy Official Merchandise here!</p>
         <iframe id="video" src="https://www.youtube.com/embed/QtGFhQlKNFo" width="80%" height="400" style="border:none;">
         </iframe>
-        <p class="tog-infp">
+        <p class="tog-info">
             Tower of God (Korean: 신의 탑; RR: Sin-ui Tap) is a South Korean manhwa
             released as a webtoon written and illustrated by S.I.U. It has been 
             serialized in Naver Corporation's webtoon platform Naver Webtoon since 
@@ -42,27 +38,36 @@
 
         <section id="Features">
             <h2 class="section-title" id="features">Features</h2>
-            <div class="features-container-1">
-                <img src="https://seekicon.com/free-icon-download/dollar_4.svg" loading="lazy" alt="dollar-sign" id="dollar-sign" height="300" width="300" class="feature-image-1">
-                <h3 id="earnings">Earnings</h3>
-                <p class="features-description-earnings">
+            
+            <div class="features-container">
+                <div class="img-des">
+                    <img src="https://seekicon.com/free-icon-download/dollar_4.svg" loading="lazy" alt="dollar-sign" id="dollar-sign" class="feature-image-1">
+                    <h3 id="earnings">Earnings</h3>
+                </div>
+                <p class="features-description">
                     All of the earnings goes back to the author and the team.
                     This helps the author and the team to continue the content.
-            </p>
+                </p>
             </div>
-            <div class="features-container-2">
-                <img src="https://cdn.icon-icons.com/icons2/2248/PNG/512/fountain_pen_tip_icon_136576.png" alt="pen tip" 
-                class="feature-image-2" id="features-pentip" loading="lazy">
-                <h3 id="design">Official Design</h3>
+
+            <div class="features-container">
+                <div class="img-des" id="features-2">
+                    <img src="https://cdn.icon-icons.com/icons2/2248/PNG/512/fountain_pen_tip_icon_136576.png" alt="pen tip" 
+                    class="feature-image-2" id="features-pentip" loading="lazy">
+                    <h3 id="design">Official Design</h3>
+                </div>
                 <p id="design-description">
                     All the merchandise are design by none other than the author
                     SIU.  
                 </p>
             </div>
-            <div class="features-container-3">
-                <img src="https://t3.ftcdn.net/jpg/02/86/46/62/360_F_286466202_2LAexeVhRZK5IScsrCUstAQjGAjMyJOr.jpg" alt="pen tip" 
-                class="feature-image-2" id="features-pentip" loading="lazy">
-                <h3 id="quality">Quality Material</h3>
+
+            <div class="features-container">
+                <div class="img-des" id="features-3">
+                    <img src="https://t3.ftcdn.net/jpg/02/86/46/62/360_F_286466202_2LAexeVhRZK5IScsrCUstAQjGAjMyJOr.jpg" alt="quality check" 
+                    class="feature-image-3" id="quality" loading="lazy">
+                    <h3 id="q-des">Quality Material</h3>
+                </div>
                 <p id="design-description">
                     All the merchandise are made by quality and greener material.  
                 </p>
@@ -70,31 +75,31 @@
         </section>
 
         <section id="Items">
-            <div>
-                <h2>Items</h2>
-            </div>
-            <div class="item-1">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9lwktT_BHgs87bFl-tCBtwneFWqOY1R_ZcQ&usqp=CAU" loading="lazy" width="300" height="300">
-                <p class="item-description">
-                    Rak Wraithraiser Action Figure
-                    <span class="price">$5.00</span>
-                </p>
-            </div>
+            <h2>Items</h2>
+            <div class="items-container">
+                <div class="item-2">
+                    <img src="data:image/jpeg;base64,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" loading="lazy" width="300" height="300">
+                    <p class="item-description">
+                        Khun Aguero Plushie
+                        <span class="price">$6.90</span>
+                    </p>
+                </div>
+                
+                <div class="item-1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9lwktT_BHgs87bFl-tCBtwneFWqOY1R_ZcQ&usqp=CAU" loading="lazy" width="300" height="300">
+                    <p class="item-description">
+                        Rak Wraithraiser Action Figure
+                        <span class="price">$5.00</span>
+                    </p>
+                </div>
 
-            <div class="item-2">
-                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhUZGBgaHCEeHRwcGhoaIxwkHBwaGh4cHh4eIS4lHCMrIRwcJjgnKy8xNTU1HCQ7QDs0Py40NTEBDAwMEA8QHhISHzQrIyU3NDQ0NDQ0NjQ0NDQ0NTQ0NDQ0NDQ0NDQ0MTQ0NDQ0NDQ0NDQ0NDQ0NDQ0MTQ0NDQ0NP/AABEIAQgAvwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAgMEBQYHAQj/xAA9EAACAQIEAwYDBwMDBAMBAAABAgADEQQSITEFQVEGImFxgZETMqEHQlKxwdHwI5LhFHLxYoKishVjwkP/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAKxEAAgIBBAEDAwMFAAAAAAAAAAECEQMEEiExQSJRYROhsQUywUJScYGR/9oADAMBAAIRAxEAPwDs0IQgBCEIAQhCAEIRitiFX5j5DmfIc4A9Es4G5kX4jsL2Kjx3PmOUaQsToLeO0mirZNNYRp8Tb7v1/wARDZV0vrG7Cx1+smhuD/5RRupEmU6wbaQGU8jEsCPDyNv+YojcWsJX0q7DQkEexkynVBkNUSpJjsIQkFghCEAIQhACEIQAhCEAIQhACEI2X5CAIdidB79PLqYilhwDmtdj947x7aIaoenvBA4R1kbEVgugGsKuIsNRr01/aVzuSb2lkismKD3JvJVNNiJEpLztr0k1TaSyqAL4xFYMNoVsVlBOwAuT4AXJi1ckAwTwMHTz6R5GAhVXSJqnKPD1gjolJW0vuPrHlYHUSupVNLHnziqNXK2ux3/QyGi6kWMIQlSwQhCAEIQgBCEIAQhEO1heAIrvYRKuLX2iXW6m25Gn+Y0ikfMIKtj7Metohn5fWeg87fvG2SAyJXvm8ANPreIRCVzEgDmb2/OLtc33N7W3lNiqhxFT4KH+kp75H32GoQHmBz9tZayrImJxdWrWpNTJWgHUMD//AEF99u6BcHxmpVztbTpv6SHiqAyWTcC40Gh0sTYdRH8DVzordRqLbcj9ZJCRG4nbIRb5u6fXfz0vLHAm9NTtpIHGdEBt94W120NpZ0EsijwkMsuyNxesyUyym1iLki+lxe1udr+08xbgqp11AOn88ZD4hVLuaYHcUd7xJF/Sw/ONYV3fKrJkCaDW+Ynn4QiGyaFO/KekXHlPLN97QTzD1NfOSVLek11B6iOyHhavd8AbfXSTJQ1QQhCCQhCEAIQhAPJGrvrbl+sdrVAoJP8Az4SrfEXK/wC4eG5koq2WKNpFZpHDWtFZ5BI5EO+UHynhaIqjukDmLQCo4hWfKqUtXcm5/CObfXSS8BgFpJlG/MnUnqSeZvrDh2CKXZzmc8xcaDlJxMkqkRqoNtQPUm3ltKXB1DSrFHPcqai97K17Eb2sd/SX7mVuPoh7k7rqL/l4wBPFgSyKNiST9APPcyfxDF5EsNW+VR4nT2HOVT44MyuEaw0A56779IzQpuz56hBblyAHSBdE3B0io1JvzJNyfOTl0P8AxI1MkddfpHnqqilm0sCSTpYAE3sNdpLZCQ1Xe7WgWVRfpH6AzKrta7X9Adh4yt4howC6ljYDe5OvPbQE+kWNpaYZiUFjbUn6ybhWJUX3Gkh4dMqhT0juGJDW66eo/hkFkT4QhILBCEIAQhIeOxGVT9f2gELH4sM2QbD6xtD3lv15+UhCrc5rfzpHcQ1lBFr3BljO+bLUAHeKOnSRqD35x/4koXEl+8otv47adI9tIBxP9bIBshO/iBJL1ANSbRYF5hI2MxyU1LO4UDmT/LzO8W7XU0b4dIipU6KRYeZ5eX7yJgOAviHD4lyRe9tgPAeP1lJTp0lbJjG+X0aTA434yZwjKp+UsMpYX3A6cweccq+P8946xRQFAsALAW2A6fSUXEOOLmyU7u21l2Es5qKuTIUXJ0h/GYlaalibfrI3A6tSrUdm7qBBlB8Se8fb+cvMHwh3YPWNzyXkP3Mt1CoGa9hz5WC/wzKOVznS6LyxqMbfY4SAP3lFjqhrOEU/08y5rX73eBK+khYnjy1WKUWOUHvvv6D95P4Vi6V7I6kUxdrFTa+gBsdOfsZpPc+k68vwUg4+Wr8IueI40IoUaWGvhM1xytVqhatFippi45Zjz06RuhxFcXUIAZUvpmRlz87gkDQdN5d1KYRCAOUyyTae00xxTW4Z4P2gpsipWqKtXKpI1t3lDAZrWvYiXVGrdgQQdjcbfTecjxTn4znxUeyKP0mx7JYprlCSRa4HTlp7z1J6ZRxKafaTZxxzNzcX7nQ57GcM11EenGdIQhCAJZrC8rsQgbfXX+GTa509f8/pK931I5ix97/tBVjFXDqRcaStqghd9idPKTq75dL+kgMcwbXTUnwG3vvDkkrZG23SLD42Tvcr/QyfVb+bTO4ypmw4tbUBdfAhZOpYo2yncDy0lU0+UWqnRUYjiISvVcDNZVUAW8WP/sJWYhcRirh2KU/wgkX8zzjmI4jQpZ2r1UQs5tmIubG1wvP6iZ/H/aFgl+VHqncEgewzG6+VhOSTySfp6OmMYJeouV7O4emAKdd6RP4KmjW6qd55iOMYqmq0qHw6hAN3IALknQ5QbaDx+mkydX7UbfJhQB4vb6BZ7S+1I3s+Fuh3s+tvIrYzZS1NU+Uvcps09uuG/KNXwnC4rEA/6h3U7MD3Qeeg2I8rjX0mrwHDkpCyr/POUfY/j9DFITSzDKbFG3W4vyvcTUq3Tecs23Jtqvg2gtsaTv5PWa0wPaRMXiXNLSnQU7t9/n8ouX8tv03NT+fznOddqe3C4esyUKPxnRbsxY5UGlxYDyudNwLm1hfBKadwSv5KZIxkqk3Xx5LDBdmaKhfi/ErW5EMiCw5IALessXwVHuhEKKNCqo4Bvfey6895zGv9pOObVRSQdAl//YkxKfaPjhv8M+aj9J0ZMepn+5tlIPDDpUdnwzoBZStxy5jz6RriFSyMfCc0ofaNUARsRhQVbUMt0vqblc1w2vQjnNnX4h8TCmqVenmUnK2jDe1wCbdfWYLHJNJmrlFrgw61LuTzJP52/SbPsq3fv0X9Rb8phaJAtebPsc/ffoKf1Og/WfS6v0YKXikeLg9WT7nSsAdD5yXK7hDXU+n6yxnjnoBCEIA3WGkrVpkgt1Y28lso09CfaWpEi4hbJoLkDTxNv3kEMqWwt1drnVgB4hRr9T/4yNi6dqZAHQ/Qy+/0tqQTmB7nc79Tf3lLj2GbJ1G/U8pnmVwZfHxJFVhnOQJbTPe/sf0k+vhi6N8M5XAOUkfn1EjpTyNc8/zkzC1O9pKYXcUWyqpMxfF+z4xeHyvb4qhirbWY+XIkC4mS4vwRDw/C1Ai0yj5K7KoLDMfhsz9bMtt92nWMRRyVHXr3h4X3+t5Dq8MplaiFMyVSS68jmAViBfu3tfTnruSZXHk2SplpR3K0cRr8EZK60dyXC3JsCGIysD+Eg3v4y07S9i62EWmxKlqjBVVGzEk7ZdAbgjbxHQzY1Ox+IFhQq4euq/J8cslSmBrkDL8w6G4/a94NwJqdQYnG11xGJUZaaIWZKY0+UtqSebHX2npZNSnDhV7nPHG75IzdkEpYuniKHcYKBVUEgMSurADTNe11PdNydDrNej6RgOSbncnX1is1p4uSe6VndCO1Ue4lM6lddQRuRuOo1EwnE+xi0uG4paYDVny1GKpluFcOUVdSqjkLzdl4laxBDDfodvWWxZNr+CJxtHBMTwxVo06id8OoLMTfKxXvJYbWOovrpLLiXZinSw9JxUFR6yJlRbKfiOVKhTc5gASp29J0PiPZPDO7VKFephHbVkUK6MfxZDpfxBt+qeF9mqNB/imo2JxGwqOuRUBFjlQaA+Jv4WnrS1dwSVf59ziWJ7itp8A/qYHDNZlw6fEc/dLKFUAebsT/ANpl12sfJhnA5i3vpLujSC9CTzmW7b1u4ificc+mv6Tiwv6meK+Ub5Fsxt/BkE8/KbLsQhtVbqUX2BY7+cyHwybCxJPLznReymDyqqD7xuT7X38AZ7f6hP0KPu/webpY+pv4NZwQ3Qnqx/MyylfwrCGkpU6rfunwlhPKR2hCEJICEIQAlBx3AsQWW5HO24l/CAZDG1yUpsEBDCzG9srKbMPI7ie0amUgj3mjr4JGRlsAG10FtevnMtUwzISjaFdj+IciszUVHoltvsmcVW6JUXUrvbof4DGEe4/xH8BUBujbEagm99NfP+ecrUBRyjE6fLzup2P86Tnzx53I2wy/pJLUUJ1UehInqUQNgBBakTn/AJeczbN6HgYziVJFlIX008jz9jEPU9YlatxcEHy5efSSouXReKfZIpHQAm5g5kKpilFrm56LqfpH6de41BHhv+UOLj2Q0+xbrfex89YtBbb6GN5/GN1KvlBUeqVvH3EwfanEh66KD8oJ97TS8QxWRCSdpglc1HLbljp+V56f6ZjvLvfSOLWzqG1dsvuzWDDvnYd1NfUzo/A6YzX6D89JnuCcIYU/hpbOVJJOwPj7gTa8Pw2SmqkDMBqfHc6+c6NRl+pNvwYYYbYkyEITA2CEIQAhCEAIQhACRsXhVqLZh5EbjykmEAx2PwT0TmtmXqNvXp5GIxR+OudfnTXlrfcett/AeM0PF8f8NbAAsdgdgOp6+Uwr8RKPYi2bcjT0sOXlMp7emWjfaJFDF38xuDuD0j4xMi1EVzmU2bqOfnIb4kKbFgCNNTacUsbTOqM0y3aqPSNNlbcAyrOK6EH1vEPjbSnJey3uBt/iHxpUDHj8U9/16c2HvCTYbLX/AFMZq4nL5SoqcXTkC3lpImIrvVsAxQc8uh9zt6TWGNt88GcppLg8xgq4qp8CipdvvAfdHVm2X129pssB2OXDYaqxAqVyh1Gyjcol9dRcX3PhtM72f4jVw5ZKXdS97WBzdSSdTfredG4PxUVl1GVunI+I/aeisiUfpw4X3Zxyg290u/we8Dw+VMxGra+g2/f2lrCEgkIQhACEIQAhCEAIQhAPIio4UXMcjCpfU7/l4SGwVGLpFmzMN9LdByEzvFeF31tNvUpXkTFYcaXlNt9lro58mHN7a5uXj/mOf/Bu4+WbheH0j90GLa9IXtmTn+JfLqPORsQ3HPX7JueUxPbAjCn4ea9Qi+UMe6OrWOnlO7V8WHXLR1ZhvYjKOpHXwnC/tW4XToVaeW5d8xZibk2tqetyT7SVjiTvZksPxd1OtmF+d/YH/mdJ7M8MXFUxUptcbEc1PMMJzHg2DFavSpEkCo6pcf8AUwH6z6O4X2VXDKpw/dIFip2YDkZZwiRuZVYPsoBq0nDgCHVRp1/F5eE0i0me2dcq/hve58T08JIqKANJG1EWZ7h3AV71xzlrhuGhG7ptaSkcIusaTF31EOkT2WAM9jaLYaxQPKWTKi4QhJAQhCAEIQgBCEIA3VawkWpi8rAMLA7GSahB7p5iQsRTDIUMpIsiQ2JAF5X/AOtV2y352kCniTYoT3hoCeYkPAYV1q94qVXW4J1PLTlITJao1aU1UaRSLffaR6L3MlltJcoMvTC3ygC8+fPtiqk45VvotJfqzn9p9B1jPm37UsRm4lWH4Aij+xW/NjAKPs5XyYvDv+GshPlnF/pPq/DHSfHs+s+CYoVKNNwbh0Vv7lDX+skFsTI1Zo6X0kSu5kAh8TclNN7ge5tHMNYWvsojFZzlbykRA7WHKVkXiX1PEZttosPqJEw6m21hPXqayEyWi1hCE0MwhCEAIQhAPJGp4ymzsgdS6fMoYErcA6jcaGNcYx60KL1W2UaDqToo9SQPWcWrszsXY98sWzbHMTcsCNjrOXUalYmlV2dGHA8ibuqO016l2IBsw28eokQ4sXs2h6ERCrdV7xuANb63tveM4mqSuV0LD8QF/puJMcqfZDxtdD2I4elTvB8p6yLg8Hq+Q5gGsW6kbygx2OsQis4ubagi3v12mywFIU0VByGvmdSfeaxkpdGck12Lw2GI1aPs8aerBWlyp5XawnzD24rZ8fiW/wDsI/tsv6T6Xxr2Uz5W4tWzV6rn71R292JhEEOfSf2b4vPw/DN0QJ/YTT//ADPmyd3+x7GZsCEG6VHU+tn0/vksHSDEPYCJDxquM2kgkitXBdRa4Jt+st2KgaD2kN8IuS2xBuDGS7pqRmXqv7SGSh+tUJ0AjJOoHWKXiKsLaX8dPzjmE7zaDbUmRRNlrCEJcoEIQgHkJ7IXEsatGk9VvlQEnx6AeJNgPOQ3XJKV8GF+0Ti4aomGUjuWZxfmRoLeAN/+4dJinqGxnuNrGs7O9mZmLHzJvp0A5dBGjRIHdY/7W1+u4+s8LNNZJuTPYxQ2QUTo/Z7jAq0VJIzKMrDxA/h9ZbJjk2vOMJXq02uhZG3axBBA/O5tuOs9bjWKLavYqRqoAGutiPb3nRGVowljpnUOIqlTEYencAs4fz+H/Ut43yzWPTvOG4fGYiriaLs5DioiqRpYs6pt4319Z3GpWAIViAWvl2F7cvMfzw7NO04s5c6aaGzTMSxtF1Cw8ogzcxI2OQsjW3sZ8ucSwNShUanUUhgffxB5gz6pMyXbfs7h6tB6lYZQoJBX5r2+7fn4GTdCrPngC+07r9lvBamHwxNQWao2fKeQsAAfHS/rKfsH2Mw9v9QXFUhu6CLZLbXX8XjtOjK1tLRuvoUSs88StYxsPeKyaXJ0HWQSSEr31O0radVlP9NwV5K2o9DylbxStWqKrUkLUbkMV1JI6gagc7+MewIqNYKrHlsQB5k7TnyybklE2gklbLGniDVYIaXe66EDxvL7C4dUWyjz8TGeHYIU111Y7n9B4SbOiCaXPZhNpvjo9hCEuVCEIQDyZ/tbweriqIp06ipZsxDAkPbZSQe6L67HYTQQlXFNNPySm07RxfH9nMVQ+eiSo+8vfXzuNVHiwEgKf5y/zO7WlPxPs3h69y1MKx+8vdPmbaN6gzz8ugT5g/8ATO3HrP71/wAOP5CCzBcwNrjYi17W5Eak8tzGxhygv8xOrL4/9J+luYE2fF+yFakC1P8AqoNbAWYeg+b018JnKaa/zf8AlxPPyLJidSVfyd0JwyK4sk9mMEKmMw6gaKxqHypqWU/3lPebntwl1pcrM2voJTfZxg/69eoRoirTU/7iajD0ApzQ9r1utP8A3H8v8T1NNGsF+/J5uoleWvYpuGdp3p2SuM6fjG48xz/OaijUSoodHDKemsxFSkCNZUvSqUmz0nZD/wBJIv6c/WaRm13yZuNnSsRUSmpd2CqNSeUyNO/FMRlN1w1KzMuxe5OUHpex8gDzOlFjcZiK4UVnuBysAL9TbczZ/Z5hgtGo1vme3oqj9WaXUt0q8ENbVZgwKnD8ZUprqqt8p2dG7yeoBtfqDOg0eNYc01fOoB5XsR4EHnKf7S8EM9CsBvmRj1tZlH/vKPB4VN7AnykNuLaRK9Ss1VXtDT+4hc+WUf3H9BK/E4l6nzmy8kG3mT96M01ttHLSNzYqjUdlG/psOjX91H7S+me7J7P5j/8AU0M3j0ZS7PYQhLEBCEIAQhCAEIQgBCEIB5Mf2w4KCPjotiPnAG45NpzHPw8psIllBFiLgzLNijlg4svjm4STRm+weFyYXORY1XZz5Xyqf7FWSe1a/wBJT0cfVW/xLbC0FpotNBZUUKo6BRYD2Eiceo5qDjoAf7SCfpeSo7YbV4Qct0792YxRpG3AjiQYeEwNiBiKfhabbsXSy4RPEuf/ADYfkBMfiALG83fZ1QMNRtzQH+7vfrNMS5Mp9Fb29wufCMeaMjD+7KfoxmJwBNp0zjlLNh6y9ab288pt9ZzbhzArGVckwfBNUx0CJE9ZtJmWNN2THdc+IHsD+80Mp+zNHLQBP3mLfoPylxOmP7UYy7PYQhLEBCEIAQhCAEIQgBCEIAQhCAESwuLHnFQgHJ6/H8MmJq4fOEam5Wz6XsdLMdD+ckV+JUlW5qIB1LqP1nOftZwDUuJ17ju1MtRT1DKAf/NWHpMWBMniRfezpHaLtnTVSlA53P3vur43+8fLTxnTPslxTVOGUSxJKl1udzaoxH0IHpPmy8+n/s44S2G4dQpuLOVLsCLEF2LhSORAIB8QZdRUeiHJsk9ucQafD8Wy3v8ABcAjcZlK38LXvOFdne2PwwErgleTjcf7hz8xPobjXDxiMPVoMbCojJfpmBAPpe/pPlDieAqYerUo1VKuhKsPLmOoIsQeYIMOKl2Qm0dWTtZhCt/jr1sQwPtaVvFe3FFVy0AajnQHKQoJ0FybE9bD3E5jeaX7P+DtisfQpgXVWFR+gRCGN+lyAvmwlfpotvZ9P0KYVVUbKAPYWjsITQoEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgGX7a9kKPEaQRyUqLfJUAuVvuCPvKdLi423E5NifsaxwJCvh2Xkczr7grp7mewgGv7GfZPTw7rWxTitUUgqig5FI5m+rkcrgDwM6jCEAJnO03Y/CY4f16ffAstRTldRroG5gXJswI12hCAYDEfYgpb+njWVOjUgzD/uDqD7Cb7sj2Rw/D6ZWiCzN89RtWa2w0Fgo5AfU6whANJCEIAQhCAEIQgBCEIB//9k=" loading="lazy" width="300" height="300">
-                <p class="item-description">
-                    Khun Aguero Plushie
-                    <span class="price">$6.90</span>
-                </p>
-            </div>
-            
-            <div class="item-3">
-                <img src="https://cdn.shopify.com/s/files/1/0445/3082/7426/products/471255_46d897af-2ca9-4f1f-a0c8-8eb2344268be_1024x1024.jpg?v=1674495544" loading="lazy" width="300" height="300">
-                <p class="item-description">
-                    Bam Plushie
-                    <span class="price">$6.90</span>
-                </p>
+                <div class="item-3">
+                    <img src="https://cdn.shopify.com/s/files/1/0445/3082/7426/products/471255_46d897af-2ca9-4f1f-a0c8-8eb2344268be_1024x1024.jpg?v=1674495544" loading="lazy" width="300" height="300">
+                    <p class="item-description">
+                        Bam Plushie
+                        <span class="price">$6.90</span>
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -111,7 +116,10 @@
 
 
     </main>
-    <footer>
+    <footer id="footer">
+        <div class="logo-img">
+            <img src="https://rialto-e.co.jp/assets/img/works/tog/logo.png" alt="tog-logo" id="tog-logo">
+        </div>
         <nav id="footer-nav">
             <ul class="footer-nav-links">
                 <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">Privacy</a></li>
